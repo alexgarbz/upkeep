@@ -296,3 +296,21 @@
     border-radius: 18px;
   }
 }
+
+/* ---------- Remove Minima footer ---------- */
+
+.site-footer,
+footer.site-footer,
+.footer-heading,
+.footer-col-wrapper,
+.footer-col,
+.contact-list,
+.social-media-list,
+.rss-subscribe {
+  display: none !important;
+}
+
+body > footer,
+main + footer {
+  display: none !important;
+}
