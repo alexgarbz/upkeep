@@ -3,8 +3,8 @@ layout: default
 title: Upkeep Support
 ---
 
-Updated Date: 7 June 2026
-App Name: Upkeep
+**Updated Date:** 7 June 2026  
+**App Name:** Upkeep 
 
 Upkeep is designed to help you stay on top of home maintenance without needing to remember everything yourself.
 
