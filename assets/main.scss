@@ -3,42 +3,213 @@
 
 @import "minima";
 
+/* ---------- Global ---------- */
+
+:root {
+  --upkeep-red: #ff3b30;
+  --upkeep-red-soft: rgba(255, 59, 48, 0.12);
+  --upkeep-card: rgba(255, 255, 255, 0.74);
+  --upkeep-border: rgba(255, 255, 255, 0.75);
+  --upkeep-text-soft: #5f6368;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(255, 59, 48, 0.16), transparent 34rem),
+    radial-gradient(circle at top right, rgba(255, 149, 0, 0.12), transparent 30rem),
+    linear-gradient(180deg, #fff7f6 0%, #f7f7f9 44%, #ffffff 100%);
+  color: #1d1d1f;
+}
+
+.page-content {
+  padding: 34px 0 52px;
+}
+
+.wrapper {
+  max-width: 860px;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  border-top: 5px solid var(--upkeep-red) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  min-height: 64px;
+}
+
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+}
+
 .site-title,
 .site-title:visited,
 .site-title:link,
 .site-title:hover,
 .site-header .site-title {
-  color: #ff3b30 !important;
-  font-weight: 700;
+  color: var(--upkeep-red) !important;
+  font-weight: 750;
+  letter-spacing: -0.02em;
   display: inline-flex !important;
   align-items: center !important;
   gap: 10px !important;
-}
-
-.site-header {
-  border-top: 5px solid #ff3b30 !important;
+  text-decoration: none !important;
+  line-height: 1;
 }
 
 .site-header img,
 .site-logo,
 .custom-site-title img {
-  width: 32px !important;
-  height: 32px !important;
-  max-width: 32px !important;
-  max-height: 32px !important;
-  border-radius: 8px !important;
+  width: 34px !important;
+  height: 34px !important;
+  max-width: 34px !important;
+  max-height: 34px !important;
+  border-radius: 9px !important;
   object-fit: cover !important;
   vertical-align: middle !important;
+  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.22);
 }
 
-.site-footer {
-  display: none !important;
-}
+/* ---------- Top navigation links ---------- */
 
 .site-nav {
+  display: block !important;
+  line-height: 1;
+  background: transparent;
+  border: 0;
+}
+
+.site-nav .page-link {
+  color: #3c4043 !important;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 18px;
+  text-decoration: none;
+}
+
+.site-nav .page-link:hover {
+  color: var(--upkeep-red) !important;
+}
+
+/* Hide mobile menu icon if Minima adds one awkwardly */
+.site-nav .menu-icon {
   display: none !important;
 }
 
-a {
-  color: #ff3b30;
+/* ---------- Page card ---------- */
+
+.post,
+.page,
+main.page-content .wrapper {
+  position: relative;
+}
+
+.post-content {
+  background: var(--upkeep-card);
+  border: 1px solid var(--upkeep-border);
+  border-radius: 28px;
+  padding: 34px;
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.post-title {
+  font-size: 42px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 760;
+  color: #1d1d1f;
+  margin-bottom: 18px;
+}
+
+.post-content h1 {
+  font-size: 38px;
+  letter-spacing: -0.035em;
+}
+
+.post-content h2 {
+  color: #1d1d1f;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.post-content p,
+.post-content li {
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+.post-content strong {
+  color: #1d1d1f;
+}
+
+.post-content a {
+  color: var(--upkeep-red);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.post-content ul {
+  margin-top: 10px;
+}
+
+.post-content li::marker {
+  color: var(--upkeep-red);
+}
+
+/* ---------- Footer fix ---------- */
+
+/* Hide Minima footer completely to stop doubled footer text */
+.site-footer,
+footer.site-footer,
+.footer-heading,
+.contact-list,
+.social-media-list,
+.footer-col-wrapper {
+  display: none !important;
+}
+
+/* ---------- Mobile ---------- */
+
+@media screen and (max-width: 700px) {
+  .site-header .wrapper {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .site-nav {
+    width: 100%;
+    text-align: left;
+  }
+
+  .site-nav .page-link {
+    display: inline-block;
+    margin: 8px 14px 0 0;
+  }
+
+  .post-content {
+    padding: 24px 20px;
+    border-radius: 24px;
+  }
+
+  .post-title {
+    font-size: 34px;
+  }
 }
