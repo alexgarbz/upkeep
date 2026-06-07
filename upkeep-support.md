@@ -16,6 +16,7 @@ This support page includes help with common questions, reminders, troubleshootin
   <span><strong>App Name:</strong> Upkeep</span>
 </div>
 
+
 ## What You Can Do With Upkeep
 
 Upkeep helps you keep important home maintenance tasks and records in one simple place.
@@ -122,20 +123,6 @@ Upkeep does not require an account, does not sell your personal information, and
 You can view the full Privacy Policy here:
 
 [Privacy Policy](upkeep-privacy-policy.md)
-
-## Contact Support
-
-For help, feedback, bug reports, or feature requests, contact:
-
-**Email:** 74jv6w9rv2@privaterelay.appleid.com
-
-When contacting support, please include:
-
-- The app name: Upkeep
-- Your device model
-- Your iOS or iPadOS version
-- A short description of the issue
-- Screenshots, if helpful
 
 ## Thank You
 
