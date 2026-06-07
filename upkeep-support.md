@@ -102,8 +102,6 @@ Try these steps:
 3. Make sure you are running the latest version of Upkeep.
 4. Make sure your device is running a recent version of iOS or iPadOS.
 
-If the issue continues, contact support using the details below.
-
 ---
 
 ## Privacy Policy
