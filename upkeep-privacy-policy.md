@@ -3,6 +3,8 @@ layout: default
 title: Privacy Policy for Upkeep
 ---
 
+#Privacy Policy 
+
 **Effective Date:** 7 June 2026  
 **App Name:** Upkeep  
 
