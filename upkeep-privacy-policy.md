@@ -16,6 +16,7 @@ This Privacy Policy explains what information Upkeep handles, how that informati
   <span><strong>App Name:</strong> Upkeep</span>
 </div>
 
+
 ## Quick Summary
 
 Upkeep is designed to keep your home maintenance information private and under your control.
