@@ -44,7 +44,7 @@ Upkeep is designed to store your app data locally on your device.
 
 Depending on your Apple device settings, your data may also be included in iCloud or device backups managed by Apple.
 
-For more details, please see the [Privacy Policy](privacy-policy.md).
+For more details, please see the [Privacy Policy](upkeep-privacy-policy.md).
 
 ### Does Upkeep require an account?
 
