@@ -1,0 +1,44 @@
+---
+---
+
+@import "minima";
+
+.site-title,
+.site-title:visited,
+.site-title:link,
+.site-title:hover,
+.site-header .site-title {
+  color: #ff3b30 !important;
+  font-weight: 700;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.site-header {
+  border-top: 5px solid #ff3b30 !important;
+}
+
+.site-header img,
+.site-logo,
+.custom-site-title img {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  border-radius: 8px !important;
+  object-fit: cover !important;
+  vertical-align: middle !important;
+}
+
+.site-footer {
+  display: none !important;
+}
+
+.site-nav {
+  display: none !important;
+}
+
+a {
+  color: #ff3b30;
+}
