@@ -1,4 +1,7 @@
-# Privacy Policy for Upkeep
+---
+layout: default
+title: Privacy Policy for Upkeep
+---
 
 **Effective Date:** 7 June 2026  
 **App Name:** Upkeep  
