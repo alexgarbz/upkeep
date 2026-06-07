@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.site-title,
+.site-title:visited,
+.site-title:hover {
+  color: #ff3b30 !important;
+}
+
+.site-header {
+  border-top-color: #ff3b30;
+}
