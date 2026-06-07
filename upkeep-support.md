@@ -1,4 +1,11 @@
-## Getting Started
+---
+layout: default
+title: Upkeep Support
+---
+
+**App Name:** Upkeep  
+**Developer:** Alex Garbin  
+**Support Contact:** 74jv6w9rv2@privaterelay.appleid.com
 
 Upkeep is designed to help you stay on top of home maintenance without needing to remember everything yourself.
 
