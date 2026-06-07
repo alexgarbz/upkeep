@@ -15,8 +15,7 @@ This Privacy Policy explains what information Upkeep handles, how that informati
   <span><strong>Effective Date:</strong> 7 June 2026</span>
   <span><strong>App Name:</strong> Upkeep</span>
 </div>
-
-
+<br>
 ## Quick Summary
 
 Upkeep is designed to keep your home maintenance information private and under your control.
