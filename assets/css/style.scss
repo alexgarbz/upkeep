@@ -41,3 +41,14 @@
 .site-header {
   border-top: 5px solid #ff3b30 !important;
 }
+.site-header img,
+.site-logo,
+.custom-site-title img {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  border-radius: 8px !important;
+  object-fit: cover !important;
+  vertical-align: middle !important;
+}
