@@ -15,8 +15,7 @@ This support page includes help with common questions, reminders, troubleshootin
   <span><strong>Updated Date:</strong> 7 June 2026</span>
   <span><strong>App Name:</strong> Upkeep</span>
 </div>
-
-
+<br>
 ## What You Can Do With Upkeep
 
 Upkeep helps you keep important home maintenance tasks and records in one simple place.
