@@ -16,3 +16,28 @@
 .site-footer {
   display: none !important;
 }
+.custom-header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.custom-site-title {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+  color: #ff3b30 !important;
+  font-weight: 700;
+}
+
+.site-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.site-header {
+  border-top: 5px solid #ff3b30 !important;
+}
