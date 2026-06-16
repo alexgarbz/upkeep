@@ -6,12 +6,12 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
 
 <div class="upk">
   <nav class="upk-nav">
-    <a class="upk-brand" href="/">
-      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/bc/0c/53bc0c67-020d-e37c-a978-ad70c003b5ff/HomeCareIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/1024x1024bb.jpg" alt="Upkeep">
+    <a class="upk-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/upkeep-icon.png' | relative_url }}" alt="Upkeep">
       <span>Upkeep</span>
     </a>
 
-    <a class="upk-nav-link" href="/privacy/">Privacy</a>
+    <a class="upk-nav-link" href="{{ '/privacy/' | relative_url }}">Privacy</a>
   </nav>
 
   <section class="upk-hero">
@@ -32,11 +32,9 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
         and recurring reminders into one calm, private system.
       </p>
 
-      <div class="upk-actions">
-        <a class="upk-store" href="https://apps.apple.com/au/app/upkeep/id6777450786" aria-label="Download on the App Store">
-          <img src="/assets/download-on-app-store.svg" alt="Download on the App Store">
-        </a>
-      </div>
+      <a class="upk-store" href="https://apps.apple.com/au/app/upkeep/id6777450786">
+        <img src="{{ '/assets/download-on-app-store.svg' | relative_url }}" alt="Download on the App Store">
+      </a>
 
       <div class="upk-trust">
         <span>No account</span>
@@ -47,7 +45,7 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
 
     <div class="upk-visual">
       <div class="upk-phone-wrap">
-        <img class="upk-phone" src="/assets/upkeep-app-preview-1.png" alt="Upkeep app screenshot">
+        <img class="upk-phone" src="{{ '/assets/upkeep-app-preview-1.png' | relative_url }}" alt="Upkeep app screenshot">
       </div>
 
       <div class="upk-float card-a">
@@ -81,7 +79,7 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
       <p class="upk-pill">Privacy first</p>
       <h2>Your home’s data stays yours.</h2>
       <p>Upkeep is designed around simple, local-first privacy so your home details stay under your control.</p>
-      <a href="/privacy/">Read Privacy Policy →</a>
+      <a href="{{ '/privacy/' | relative_url }}">Read Privacy Policy →</a>
     </div>
   </section>
 
@@ -90,8 +88,8 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
       <h2>Home care, made easy.</h2>
       <p>Free on iPhone. Designed for iOS 26.</p>
 
-      <a class="upk-store" href="https://apps.apple.com/au/app/upkeep/id6777450786" aria-label="Download on the App Store">
-        <img src="/assets/download-on-app-store.svg" alt="Download on the App Store">
+      <a class="upk-store" href="https://apps.apple.com/au/app/upkeep/id6777450786">
+        <img src="{{ '/assets/download-on-app-store.svg' | relative_url }}" alt="Download on the App Store">
       </a>
 
       <small>Made by Alex Garbin · © 2026</small>
@@ -100,19 +98,12 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
 </div>
 
 <style>
-html,body{
-  margin:0;
-  padding:0;
-}
+html,body{margin:0;padding:0}
 
 .upk{
   --ink:#07111f;
   --muted:#667085;
-  --blue:#1677ff;
   --green:#20c878;
-  --orange:#ffb347;
-  --pink:#ff5c93;
-  --glass:rgba(255,255,255,.16);
   font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   color:var(--ink);
   background:#050b18;
@@ -187,39 +178,17 @@ html,body{
   pointer-events:none;
 }
 
-.upk-orb.one{
-  width:360px;
-  height:360px;
-  left:-90px;
-  bottom:8%;
-  background:radial-gradient(circle,#2df6a1,transparent 68%);
-}
+.upk-orb.one{width:360px;height:360px;left:-90px;bottom:8%;background:radial-gradient(circle,#2df6a1,transparent 68%)}
+.upk-orb.two{width:420px;height:420px;right:-120px;top:10%;background:radial-gradient(circle,#ffcb5c,transparent 66%)}
+.upk-orb.three{width:300px;height:300px;right:28%;bottom:-90px;background:radial-gradient(circle,#48a7ff,transparent 65%)}
 
-.upk-orb.two{
-  width:420px;
-  height:420px;
-  right:-120px;
-  top:10%;
-  background:radial-gradient(circle,#ffcb5c,transparent 66%);
-}
-
-.upk-orb.three{
-  width:300px;
-  height:300px;
-  right:28%;
-  bottom:-90px;
-  background:radial-gradient(circle,#48a7ff,transparent 65%);
-}
-
-.upk-hero-text,
-.upk-visual{
+.upk-hero-text,.upk-visual{
   position:relative;
   z-index:2;
 }
 
 .upk-pill{
   display:inline-flex;
-  align-items:center;
   width:max-content;
   margin:0 0 28px;
   padding:9px 15px;
@@ -231,7 +200,6 @@ html,body{
   -webkit-backdrop-filter:blur(18px);
   font-size:.88rem;
   font-weight:850;
-  letter-spacing:.01em;
 }
 
 .upk-pill.dark{
@@ -261,14 +229,10 @@ html,body{
 
 .upk-sub{
   max-width:620px;
-  margin:34px 0 34px;
+  margin:34px 0;
   color:rgba(255,255,255,.82);
   font-size:clamp(1.08rem,1.55vw,1.28rem);
   line-height:1.75;
-}
-
-.upk-actions{
-  margin-top:4px;
 }
 
 .upk-store{
@@ -306,14 +270,11 @@ html,body{
 }
 
 .upk-phone-wrap{
-  position:relative;
   padding:12px;
   border-radius:54px;
   background:linear-gradient(145deg,rgba(255,255,255,.35),rgba(255,255,255,.06));
   border:1px solid rgba(255,255,255,.24);
-  box-shadow:
-    0 50px 120px rgba(0,0,0,.42),
-    inset 0 1px 0 rgba(255,255,255,.45);
+  box-shadow:0 50px 120px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.45);
   backdrop-filter:blur(30px);
   -webkit-backdrop-filter:blur(30px);
 }
@@ -353,15 +314,8 @@ html,body{
   opacity:.9;
 }
 
-.card-a{
-  left:-58px;
-  top:18%;
-}
-
-.card-b{
-  right:-46px;
-  bottom:18%;
-}
+.card-a{left:-58px;top:18%}
+.card-b{right:-46px;bottom:18%}
 
 .upk-section{
   padding:110px max(24px,calc((100vw - 1180px)/2));
@@ -393,7 +347,6 @@ html,body{
 }
 
 .upk-grid article{
-  position:relative;
   min-height:230px;
   padding:28px;
   border-radius:34px;
@@ -404,11 +357,6 @@ html,body{
   -webkit-backdrop-filter:blur(22px);
 }
 
-.upk-grid article:hover{
-  transform:translateY(-4px);
-  transition:.22s ease;
-}
-
 .upk-grid span{
   display:grid;
   place-items:center;
@@ -417,13 +365,11 @@ html,body{
   border-radius:22px;
   font-size:1.85rem;
   background:linear-gradient(135deg,#e8f1ff,#e5fff1);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.9);
 }
 
 .upk-grid h3{
   margin:22px 0 9px;
   font-size:1.25rem;
-  letter-spacing:-.02em;
 }
 
 .upk-grid p{
@@ -440,9 +386,7 @@ html,body{
   color:white;
 }
 
-.upk-privacy div{
-  max-width:820px;
-}
+.upk-privacy div{max-width:820px}
 
 .upk-privacy p{
   max-width:660px;
@@ -455,7 +399,6 @@ html,body{
   color:white;
   font-weight:900;
   text-decoration:none;
-  font-size:1.05rem;
 }
 
 .upk-final{
@@ -471,9 +414,7 @@ html,body{
     linear-gradient(135deg,#ff9f1c 0%,#ff5c93 45%,#1677ff 100%);
 }
 
-.upk-final h2{
-  color:white;
-}
+.upk-final h2{color:white}
 
 .upk-final p{
   margin:0 0 30px;
@@ -495,9 +436,7 @@ html,body{
     padding:118px 24px 72px;
   }
 
-  .upk-pill,
-  .upk-trust,
-  .upk-actions{
+  .upk-pill,.upk-trust{
     margin-left:auto;
     margin-right:auto;
     justify-content:center;
@@ -517,15 +456,8 @@ html,body{
     width:min(360px,86vw);
   }
 
-  .card-a{
-    left:-18px;
-    top:12%;
-  }
-
-  .card-b{
-    right:-18px;
-    bottom:12%;
-  }
+  .card-a{left:-18px;top:12%}
+  .card-b{right:-18px;bottom:12%}
 
   .upk-grid{
     grid-template-columns:1fr;
@@ -536,10 +468,6 @@ html,body{
   .upk-nav{
     top:12px;
     width:calc(100% - 24px);
-  }
-
-  .upk-nav-link{
-    padding:9px 13px;
   }
 
   .upk-hero{
@@ -560,10 +488,6 @@ html,body{
 
   .upk-store img{
     height:48px;
-  }
-
-  .upk-trust{
-    gap:8px;
   }
 
   .upk-trust span{
@@ -588,8 +512,7 @@ html,body{
     display:none;
   }
 
-  .upk-section,
-  .upk-privacy{
+  .upk-section,.upk-privacy{
     padding:76px 18px;
   }
 
