@@ -31,15 +31,7 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
     </div>
 
     <div class="uk-phone">
-      <div class="uk-screen">
-        <div class="uk-screen-top">
-          <strong>Upkeep Score</strong>
-          <span>85</span>
-        </div>
-        <div class="uk-task"><b>Change HVAC filter</b><small>Due today</small></div>
-        <div class="uk-task"><b>Test smoke alarms</b><small>Due today</small></div>
-        <div class="uk-task"><b>Flush water heater</b><small>Due in 12 days</small></div>
-      </div>
+      <img src="/assets/upkeep-app-preview-1.png" alt="Upkeep app screenshot">
     </div>
   </section>
 
@@ -100,11 +92,11 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
 .uk-hero{
   position:relative;
   display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:40px;
+  grid-template-columns:minmax(0,1fr) minmax(300px,440px);
+  gap:56px;
   align-items:center;
-  min-height:760px;
-  padding:80px max(24px,calc((100vw - 1180px)/2)) 90px;
+  min-height:min(820px,100vh);
+  padding:clamp(56px,7vw,96px) max(24px,calc((100vw - 1240px)/2));
   background:
     radial-gradient(circle at 12% 12%,rgba(255,255,255,.35),transparent 24%),
     radial-gradient(circle at 85% 22%,rgba(255,159,28,.45),transparent 28%),
@@ -156,9 +148,7 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
   font-weight:900;
 }
 
-.uk h1 span{
-  color:#FFD166;
-}
+.uk h1 span{color:#FFD166}
 
 .uk-sub{
   max-width:600px;
@@ -198,41 +188,16 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
 
 .uk-phone{
   justify-self:center;
-  width:min(360px,86vw);
-  aspect-ratio:9/18.8;
-  padding:16px;
-  border-radius:54px;
-  background:linear-gradient(145deg,#222,#050505);
+  width:min(420px,90vw);
+}
+
+.uk-phone img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:42px;
   box-shadow:0 40px 90px rgba(0,0,0,.38);
 }
-
-.uk-screen{
-  height:100%;
-  border-radius:40px;
-  background:linear-gradient(180deg,#F8FBFF,#EEF5F1);
-  padding:34px 20px;
-}
-
-.uk-screen-top{
-  background:white;
-  border-radius:24px;
-  padding:22px;
-  box-shadow:0 18px 40px rgba(16,32,51,.12);
-}
-
-.uk-screen-top strong{display:block;font-size:1rem}
-.uk-screen-top span{display:block;font-size:4rem;font-weight:900;color:var(--green);line-height:1}
-
-.uk-task{
-  margin-top:14px;
-  padding:16px;
-  border-radius:18px;
-  background:white;
-  box-shadow:0 12px 28px rgba(16,32,51,.08);
-}
-
-.uk-task b{display:block}
-.uk-task small{color:var(--orange);font-weight:800}
 
 .uk-section{
   padding:90px max(24px,calc((100vw - 1180px)/2));
@@ -293,9 +258,7 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
   color:white;
 }
 
-.uk-band div{
-  max-width:760px;
-}
+.uk-band div{max-width:760px}
 
 .uk-band p{
   font-size:1.16rem;
@@ -330,12 +293,22 @@ description: "Upkeep helps you stay on top of home maintenance, reminders, warra
   .uk-hero{
     grid-template-columns:1fr;
     text-align:center;
-    padding-top:54px;
+    min-height:auto;
+    padding:48px 22px 64px;
   }
 
-  .uk-sub{margin-left:auto;margin-right:auto}
+  .uk-phone{
+    width:min(320px,86vw);
+  }
 
-  .uk-trust{justify-content:center}
+  .uk-sub{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .uk-trust{
+    justify-content:center;
+  }
 
   .uk-grid{
     grid-template-columns:1fr;
