@@ -1,232 +1,344 @@
 ---
 layout: default
-title: Upkeep — Home care, made easy.
-description: Upkeep helps you stay on top of home maintenance, reminders, warranties, and emergency essentials — all in one calm, private place.
+title: "Upkeep — Home care, made easy."
+description: "Upkeep helps you stay on top of home maintenance, reminders, warranties, and emergency essentials — all in one calm, private place."
 ---
 
 <div class="uk">
+  <section class="uk-hero">
+    <div class="uk-bg"></div>
 
-  <!-- ===== HERO ===== -->
-  <header class="uk-hero">
-    <div class="uk-hero-glow" aria-hidden="true"></div>
-    <div class="uk-hero-inner">
-      <img
-        class="uk-appicon"
-        src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/bc/0c/53bc0c67-020d-e37c-a978-ad70c003b5ff/HomeCareIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/1024x1024bb.jpg"
-        alt="Upkeep app icon"
-        width="160" height="160" loading="eager" />
+    <div class="uk-hero-content">
+      <img class="uk-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/bc/0c/53bc0c67-020d-e37c-a978-ad70c003b5ff/HomeCareIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/1024x1024bb.jpg" alt="Upkeep app icon">
 
-      <h1 class="uk-title">Upkeep</h1>
-      <p class="uk-tagline">Home care, made easy.</p>
+      <p class="uk-kicker">Private home maintenance for iPhone</p>
+      <h1>Home care,<br><span>made easy.</span></h1>
+
       <p class="uk-sub">
-        Stay on top of home maintenance, recurring reminders, and the important
-        details — tasks, warranties, receipts, shutoffs, and emergency contacts —
-        all in one calm, private place.
+        Upkeep helps you manage reminders, warranties, receipts, shutoffs,
+        emergency essentials, and home-care routines in one calm place.
       </p>
 
-      <a class="uk-cta" href="https://apps.apple.com/us/app/upkeep/id6777450786">
-        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
-          <path fill="currentColor" d="M16.365 1.43c0 1.14-.42 2.21-1.16 3.02-.79.86-2.07 1.53-3.21 1.44-.13-1.1.42-2.27 1.13-3.04.79-.86 2.16-1.5 3.24-1.42zM20.5 17.2c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.94-1-4.03-.99-2.09.01-2.53 1.01-4.07.99-1.73-.02-3.05-1.77-4.04-3.33C-.06 16.96-.36 11.7 2.14 8.9c.99-1.13 2.48-1.85 3.84-1.85 1.39 0 2.26.99 3.41.99 1.11 0 1.79-.99 3.4-.99 1.21 0 2.49.66 3.41 1.8-3 1.64-2.51 5.92.3 7.35z"/>
-        </svg>
-        <span>Download on the App&nbsp;Store</span>
+      <a class="uk-store" href="https://apps.apple.com/au/app/upkeep/id6777450786">
+        <img src="/assets/download-on-app-store.svg" alt="Download on the App Store">
       </a>
 
-      <ul class="uk-badges">
-        <li>No account needed</li>
-        <li>No tracking</li>
-        <li>Your data stays on your device</li>
-      </ul>
+      <div class="uk-trust">
+        <span>✓ No account</span>
+        <span>✓ No tracking</span>
+        <span>✓ Stored on device</span>
+      </div>
     </div>
-  </header>
 
-  <!-- ===== FEATURES ===== -->
+    <div class="uk-phone">
+      <div class="uk-screen">
+        <div class="uk-screen-top">
+          <strong>Upkeep Score</strong>
+          <span>85</span>
+        </div>
+        <div class="uk-task"><b>Change HVAC filter</b><small>Due today</small></div>
+        <div class="uk-task"><b>Test smoke alarms</b><small>Due today</small></div>
+        <div class="uk-task"><b>Flush water heater</b><small>Due in 12 days</small></div>
+      </div>
+    </div>
+  </section>
+
   <section class="uk-section">
-    <h2 class="uk-h2">Everything your home needs, in one place</h2>
-    <p class="uk-lead">A reliable home‑care routine without the clutter.</p>
+    <p class="uk-kicker dark">Everything organised</p>
+    <h2>Built for real homes, not spreadsheets.</h2>
 
     <div class="uk-grid">
-      <article class="uk-card">
-        <span class="uk-emoji" aria-hidden="true">🔔</span>
-        <h3>Smart reminders</h3>
-        <p>Recurring tasks, due‑today nudges, and overdue alerts so nothing slips through the cracks.</p>
-      </article>
-
-      <article class="uk-card">
-        <span class="uk-emoji" aria-hidden="true">🧩</span>
-        <h3>Ready‑made templates</h3>
-        <p>Start fast with built‑in starter templates for common seasonal and household tasks.</p>
-      </article>
-
-      <article class="uk-card">
-        <span class="uk-emoji" aria-hidden="true">⭐</span>
-        <h3>Upkeep Score</h3>
-        <p>A simple, at‑a‑glance score that shows how on‑track your home care really is.</p>
-      </article>
-
-      <article class="uk-card">
-        <span class="uk-emoji" aria-hidden="true">🧾</span>
-        <h3>Warranties &amp; receipts</h3>
-        <p>Keep product records, warranty details, and receipts together — easy to find when you need them.</p>
-      </article>
-
-      <article class="uk-card">
-        <span class="uk-emoji" aria-hidden="true">🛟</span>
-        <h3>Emergency essentials</h3>
-        <p>Water shutoffs, switchboard, alarm codes, and emergency contacts saved for the moment that counts.</p>
-      </article>
-
-      <article class="uk-card">
-        <span class="uk-emoji" aria-hidden="true">🔒</span>
-        <h3>Private by design</h3>
-        <p>Most data lives locally on your device. No ads, no profiling, no data brokers.</p>
-      </article>
+      <article><span>🔔</span><h3>Smart reminders</h3><p>Recurring maintenance tasks, due-today nudges, and overdue alerts.</p></article>
+      <article><span>🧩</span><h3>Templates</h3><p>Start fast with ready-made routines for common home-care jobs.</p></article>
+      <article><span>⭐</span><h3>Upkeep Score</h3><p>See how on-track your home maintenance is at a glance.</p></article>
+      <article><span>🧾</span><h3>Warranties</h3><p>Keep warranty details, receipts, and product records easy to find.</p></article>
+      <article><span>🛟</span><h3>Emergency info</h3><p>Save shutoffs, switchboard details, codes, and emergency contacts.</p></article>
+      <article><span>🔒</span><h3>Private by design</h3><p>No ads, no profiling, no data brokers, and no account required.</p></article>
     </div>
   </section>
 
-  <!-- ===== PRIVACY BAND ===== -->
-  <section class="uk-privacy">
-    <div class="uk-privacy-inner">
-      <h2 class="uk-h2">Your home’s data stays yours</h2>
-      <p class="uk-lead">Upkeep is built to keep your information private and under your control.</p>
-      <div class="uk-pills">
-        <span>No account required</span>
-        <span>No selling your data</span>
-        <span>No cross‑app tracking</span>
-        <span>No advertising</span>
-        <span>Stored on your device</span>
-      </div>
-      <p class="uk-privacy-link">
-        Read the full <a href="/privacy">Privacy Policy</a>.
-      </p>
+  <section class="uk-band">
+    <div>
+      <p class="uk-kicker">Privacy first</p>
+      <h2>Your home’s data stays yours.</h2>
+      <p>Upkeep is designed around local-first storage and simple privacy. Your personal home details stay under your control.</p>
+      <a href="/privacy/">Read Privacy Policy →</a>
     </div>
   </section>
 
-  <!-- ===== FINAL CTA ===== -->
   <section class="uk-final">
-    <h2 class="uk-h2">Ready to take care of your home?</h2>
-    <p class="uk-lead">Free on iPhone. Designed for iOS&nbsp;26.</p>
-    <a class="uk-cta uk-cta-lg" href="https://apps.apple.com/us/app/upkeep/id6777450786">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
-        <path fill="currentColor" d="M16.365 1.43c0 1.14-.42 2.21-1.16 3.02-.79.86-2.07 1.53-3.21 1.44-.13-1.1.42-2.27 1.13-3.04.79-.86 2.16-1.5 3.24-1.42zM20.5 17.2c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.94-1-4.03-.99-2.09.01-2.53 1.01-4.07.99-1.73-.02-3.05-1.77-4.04-3.33C-.06 16.96-.36 11.7 2.14 8.9c.99-1.13 2.48-1.85 3.84-1.85 1.39 0 2.26.99 3.41.99 1.11 0 1.79-.99 3.4-.99 1.21 0 2.49.66 3.41 1.8-3 1.64-2.51 5.92.3 7.35z"/>
-      </svg>
-      <span>Download on the App&nbsp;Store</span>
-    </a>
-    <p class="uk-foot">Made by Alex Garbin · © 2026</p>
-  </section>
+    <h2>Ready to take care of your home?</h2>
+    <p>Free on iPhone. Designed for iOS 26.</p>
 
+    <a class="uk-store" href="https://apps.apple.com/au/app/upkeep/id6777450786">
+      <img src="/assets/download-on-app-store.svg" alt="Download on the App Store">
+    </a>
+
+    <small>Made by Alex Garbin · © 2026</small>
+  </section>
 </div>
 
 <style>
-/* ===== Upkeep landing — warm & homey, scoped to .uk ===== */
 .uk{
-  --bg:#FBF6EE;
+  --navy:#071E3D;
+  --blue:#1178FF;
+  --teal:#00B894;
+  --green:#25B864;
+  --orange:#FF9F1C;
+  --pink:#FF5C8A;
+  --cream:#FFF8EC;
   --card:#FFFFFF;
-  --ink:#2C2A26;
-  --muted:#6E675C;
-  --green:#3E6B4F;
-  --green-deep:#2C5239;
-  --terra:#D97A4E;
-  --terra-soft:#F0C9A8;
-  --ring:rgba(62,107,79,.16);
-  --shadow:0 18px 40px -18px rgba(58,46,33,.35);
+  --text:#102033;
+  --muted:#667085;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  color:var(--ink);
-  line-height:1.6;
-  margin:0 auto;
-  max-width:1080px;
-  padding:0 20px 64px;
-  -webkit-font-smoothing:antialiased;
+  color:var(--text);
+  overflow:hidden;
 }
-.uk *{box-sizing:border-box;}
 
-/* HERO */
-.uk-hero{position:relative;text-align:center;padding:72px 16px 56px;overflow:hidden;}
-.uk-hero-glow{
-  position:absolute;inset:-20% -10% auto -10%;height:520px;z-index:0;
+.uk *{box-sizing:border-box}
+
+.uk-hero{
+  position:relative;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:40px;
+  align-items:center;
+  min-height:760px;
+  padding:80px max(24px,calc((100vw - 1180px)/2)) 90px;
   background:
-    radial-gradient(60% 60% at 30% 20%, rgba(217,122,78,.22), transparent 70%),
-    radial-gradient(55% 55% at 75% 15%, rgba(62,107,79,.20), transparent 70%);
-  filter:blur(6px);
-}
-.uk-hero-inner{position:relative;z-index:1;max-width:680px;margin:0 auto;}
-.uk-appicon{
-  width:148px;height:148px;border-radius:34px;display:block;margin:0 auto 26px;
-  box-shadow:0 24px 50px -16px rgba(58,46,33,.45);
-  border:1px solid rgba(255,255,255,.6);
-}
-.uk-title{font-size:clamp(2.6rem,7vw,4rem);font-weight:800;letter-spacing:-.02em;margin:0;color:var(--green-deep);}
-.uk-tagline{font-size:clamp(1.25rem,3.4vw,1.6rem);font-weight:600;color:var(--terra);margin:.35rem 0 1rem;}
-.uk-sub{font-size:1.08rem;color:var(--muted);margin:0 auto 28px;max-width:560px;}
-
-/* CTA button */
-.uk-cta{
-  display:inline-flex;align-items:center;gap:10px;
-  background:linear-gradient(180deg,var(--green) 0%,var(--green-deep) 100%);
-  color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;
-  padding:15px 28px;border-radius:16px;
-  box-shadow:0 14px 26px -10px rgba(44,82,57,.65);
-  transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
-}
-.uk-cta:hover{transform:translateY(-2px);box-shadow:0 20px 34px -10px rgba(44,82,57,.7);filter:brightness(1.04);}
-.uk-cta svg{flex:none;}
-.uk-cta-lg{font-size:1.15rem;padding:17px 34px;}
-
-.uk-badges{
-  list-style:none;display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;
-  padding:0;margin:26px 0 0;color:var(--muted);font-size:.92rem;font-weight:600;
-}
-.uk-badges li{position:relative;padding-left:20px;}
-.uk-badges li::before{
-  content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;
-  background:var(--terra);box-shadow:0 0 0 4px rgba(217,122,78,.18);
+    radial-gradient(circle at 12% 12%,rgba(255,255,255,.35),transparent 24%),
+    radial-gradient(circle at 85% 22%,rgba(255,159,28,.45),transparent 28%),
+    linear-gradient(135deg,#073B5C 0%,#087F8C 42%,#32C766 100%);
 }
 
-/* SECTION */
-.uk-section{padding:56px 8px 16px;text-align:center;}
-.uk-h2{font-size:clamp(1.7rem,4vw,2.3rem);font-weight:800;letter-spacing:-.01em;color:var(--green-deep);margin:0 0 .4rem;}
-.uk-lead{font-size:1.1rem;color:var(--muted);margin:0 auto 36px;max-width:560px;}
+.uk-bg{
+  position:absolute;
+  inset:auto -10% -32% -10%;
+  height:420px;
+  background:radial-gradient(circle,rgba(255,255,255,.28),transparent 65%);
+  filter:blur(18px);
+}
 
-/* FEATURE GRID */
+.uk-hero-content,.uk-phone{position:relative;z-index:1}
+
+.uk-icon{
+  width:96px;
+  height:96px;
+  border-radius:24px;
+  box-shadow:0 22px 60px rgba(0,0,0,.28);
+  margin-bottom:26px;
+}
+
+.uk-kicker{
+  display:inline-flex;
+  margin:0 0 16px;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.18);
+  color:white;
+  font-weight:800;
+  font-size:.86rem;
+  letter-spacing:.02em;
+  backdrop-filter:blur(16px);
+}
+
+.uk-kicker.dark{
+  background:rgba(17,120,255,.10);
+  color:var(--blue);
+}
+
+.uk h1{
+  margin:0;
+  color:white;
+  font-size:clamp(3.4rem,7vw,6.4rem);
+  line-height:.92;
+  letter-spacing:-.07em;
+  font-weight:900;
+}
+
+.uk h1 span{
+  color:#FFD166;
+}
+
+.uk-sub{
+  max-width:600px;
+  margin:28px 0 30px;
+  color:rgba(255,255,255,.9);
+  font-size:1.22rem;
+  line-height:1.65;
+}
+
+.uk-store{
+  display:inline-flex;
+  line-height:0;
+}
+
+.uk-store img{
+  height:54px;
+  width:auto;
+  display:block;
+}
+
+.uk-trust{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:26px;
+}
+
+.uk-trust span{
+  color:white;
+  font-weight:800;
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.24);
+  padding:10px 14px;
+  border-radius:999px;
+  backdrop-filter:blur(16px);
+}
+
+.uk-phone{
+  justify-self:center;
+  width:min(360px,86vw);
+  aspect-ratio:9/18.8;
+  padding:16px;
+  border-radius:54px;
+  background:linear-gradient(145deg,#222,#050505);
+  box-shadow:0 40px 90px rgba(0,0,0,.38);
+}
+
+.uk-screen{
+  height:100%;
+  border-radius:40px;
+  background:linear-gradient(180deg,#F8FBFF,#EEF5F1);
+  padding:34px 20px;
+}
+
+.uk-screen-top{
+  background:white;
+  border-radius:24px;
+  padding:22px;
+  box-shadow:0 18px 40px rgba(16,32,51,.12);
+}
+
+.uk-screen-top strong{display:block;font-size:1rem}
+.uk-screen-top span{display:block;font-size:4rem;font-weight:900;color:var(--green);line-height:1}
+
+.uk-task{
+  margin-top:14px;
+  padding:16px;
+  border-radius:18px;
+  background:white;
+  box-shadow:0 12px 28px rgba(16,32,51,.08);
+}
+
+.uk-task b{display:block}
+.uk-task small{color:var(--orange);font-weight:800}
+
+.uk-section{
+  padding:90px max(24px,calc((100vw - 1180px)/2));
+  background:linear-gradient(180deg,#FFF8EC,#FFFFFF);
+  text-align:center;
+}
+
+.uk h2{
+  margin:0 auto 18px;
+  max-width:760px;
+  font-size:clamp(2.2rem,4.6vw,4rem);
+  line-height:1;
+  letter-spacing:-.05em;
+  font-weight:900;
+}
+
 .uk-grid{
-  display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));
-  text-align:left;margin-top:8px;
+  margin-top:44px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  text-align:left;
 }
-.uk-card{
-  background:var(--card);border:1px solid var(--ring);border-radius:22px;
-  padding:26px 24px;box-shadow:var(--shadow);
-  transition:transform .18s ease, box-shadow .18s ease;
-}
-.uk-card:hover{transform:translateY(-4px);box-shadow:0 26px 50px -20px rgba(58,46,33,.4);}
-.uk-emoji{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:54px;height:54px;border-radius:16px;font-size:1.6rem;margin-bottom:14px;
-  background:linear-gradient(180deg,#FBEFE4,#F4E2D2);
-}
-.uk-card h3{margin:0 0 6px;font-size:1.18rem;font-weight:700;color:var(--ink);}
-.uk-card p{margin:0;color:var(--muted);font-size:.98rem;}
 
-/* PRIVACY BAND */
-.uk-privacy{margin:56px 0;padding:2px;border-radius:30px;
-  background:linear-gradient(135deg,rgba(62,107,79,.10),rgba(217,122,78,.12));}
-.uk-privacy-inner{
-  background:var(--bg);border-radius:28px;padding:48px 28px;text-align:center;
+.uk-grid article{
+  background:white;
+  border:1px solid rgba(16,32,51,.08);
+  border-radius:30px;
+  padding:30px;
+  box-shadow:0 24px 70px rgba(16,32,51,.08);
 }
-.uk-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:10px auto 18px;max-width:680px;}
-.uk-pills span{
-  background:#fff;border:1px solid var(--ring);color:var(--green-deep);
-  font-weight:600;font-size:.9rem;padding:9px 16px;border-radius:999px;box-shadow:var(--shadow);
+
+.uk-grid span{
+  display:grid;
+  place-items:center;
+  width:60px;
+  height:60px;
+  border-radius:20px;
+  font-size:1.8rem;
+  background:linear-gradient(135deg,#EAF3FF,#DFFBEF);
 }
-.uk-privacy-link{margin:8px 0 0;color:var(--muted);}
-.uk-privacy-link a,.uk-final a.uk-cta{color:#fff;}
-.uk-privacy-link a{color:var(--green);font-weight:700;text-decoration:none;border-bottom:2px solid var(--terra-soft);}
-.uk-privacy-link a:hover{border-bottom-color:var(--terra);}
 
-/* FINAL CTA */
-.uk-final{text-align:center;padding:40px 16px 8px;}
-.uk-foot{margin-top:28px;color:var(--muted);font-size:.88rem;}
+.uk-grid h3{
+  margin:20px 0 8px;
+  font-size:1.22rem;
+}
 
-@media (max-width:520px){
-  .uk-hero{padding:52px 8px 40px;}
-  .uk-appicon{width:120px;height:120px;border-radius:28px;}
+.uk-grid p{
+  margin:0;
+  color:var(--muted);
+}
+
+.uk-band{
+  padding:80px max(24px,calc((100vw - 1180px)/2));
+  background:
+    radial-gradient(circle at 20% 20%,rgba(255,255,255,.25),transparent 26%),
+    linear-gradient(135deg,#102033,#0B7A75 55%,#25B864);
+  color:white;
+}
+
+.uk-band div{
+  max-width:760px;
+}
+
+.uk-band p{
+  font-size:1.16rem;
+  color:rgba(255,255,255,.86);
+}
+
+.uk-band a{
+  color:white;
+  font-weight:900;
+  text-decoration:none;
+}
+
+.uk-final{
+  text-align:center;
+  padding:90px 24px 70px;
+  background:linear-gradient(135deg,#FF9F1C,#FF5C8A 45%,#1178FF);
+  color:white;
+}
+
+.uk-final p{
+  font-size:1.2rem;
+  margin-bottom:28px;
+}
+
+.uk-final small{
+  display:block;
+  margin-top:34px;
+  opacity:.82;
+}
+
+@media(max-width:860px){
+  .uk-hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding-top:54px;
+  }
+
+  .uk-sub{margin-left:auto;margin-right:auto}
+
+  .uk-trust{justify-content:center}
+
+  .uk-grid{
+    grid-template-columns:1fr;
+  }
 }
 </style>
