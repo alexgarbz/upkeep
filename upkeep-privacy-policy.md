@@ -19,7 +19,7 @@ title: Privacy Policy
   </div>
 </section>
 
-<div class="legal-page privacy-accent">
+<div class="legal-page privacy-accent" markdown="1">
 
 <div class="legal-grid">
   <div class="legal-callout">

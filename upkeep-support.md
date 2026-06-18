@@ -18,7 +18,7 @@ title: Support
   </div>
 </section>
 
-<div class="legal-page support-accent">
+<div class="legal-page support-accent" markdown="1">
 
 <div class="legal-grid">
   <div class="legal-callout">

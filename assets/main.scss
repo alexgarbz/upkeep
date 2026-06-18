@@ -5,15 +5,15 @@
 
 :root {
   color-scheme: light;
-  --upkeep-ink: #241711;
-  --upkeep-muted: #7b6a5d;
-  --upkeep-line: rgba(88, 58, 38, 0.13);
-  --upkeep-clay: #d96a3d;
-  --upkeep-sage: #6eaa7d;
-  --upkeep-honey: #e8a93d;
-  --upkeep-sky: #6fa8dc;
-  --upkeep-red: #d9554b;
-  --upkeep-bg: #fbf4ea;
+  --upkeep-ink: #1f1713;
+  --upkeep-muted: #746960;
+  --upkeep-line: rgba(66, 48, 36, 0.13);
+  --upkeep-clay: #b86b56;
+  --upkeep-sage: #748a78;
+  --upkeep-copper: #c18663;
+  --upkeep-sky: #6685a6;
+  --upkeep-red: #b85b57;
+  --upkeep-bg: #f7f1e8;
 }
 
 html {
@@ -22,9 +22,9 @@ html {
 
 body {
   background:
-    radial-gradient(circle at 12% 8%, rgba(232, 169, 61, 0.18), transparent 30%),
-    radial-gradient(circle at 88% 18%, rgba(110, 170, 125, 0.18), transparent 28%),
-    linear-gradient(180deg, #fff9f0 0%, #f8efe4 48%, #f2e8dc 100%),
+    radial-gradient(circle at 12% 8%, rgba(184, 107, 86, 0.14), transparent 30%),
+    radial-gradient(circle at 88% 18%, rgba(116, 138, 120, 0.18), transparent 28%),
+    linear-gradient(180deg, #fffaf4 0%, #f7f1e8 48%, #eee6da 100%),
     var(--upkeep-bg) !important;
   color: var(--upkeep-ink);
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
@@ -34,6 +34,8 @@ body {
 .site-header {
   border: 0 !important;
   background: transparent !important;
+  position: relative;
+  z-index: 50;
 }
 
 .site-header .wrapper.custom-header-wrapper {
@@ -66,7 +68,7 @@ body {
 
 .site-logo {
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(217, 106, 61, 0.2);
+  box-shadow: 0 10px 25px rgba(184, 107, 86, 0.18);
 }
 
 .site-nav {
@@ -197,9 +199,9 @@ main.page-content > .wrapper,
 }
 
 .emergency-accent {
-  --accent: var(--upkeep-honey);
-  --accent-soft: rgba(232, 169, 61, 0.16);
-  --accent-glow: rgba(232, 169, 61, 0.22);
+  --accent: var(--upkeep-copper);
+  --accent-soft: rgba(193, 134, 99, 0.15);
+  --accent-glow: rgba(193, 134, 99, 0.2);
 }
 
 .legal-summary-card,
