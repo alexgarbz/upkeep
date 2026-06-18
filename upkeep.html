@@ -15,6 +15,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
       <a href="#features">Features</a>
       <a href="{{ '/upkeep-privacy-policy' | relative_url }}">Privacy</a>
       <a href="{{ '/upkeep-support' | relative_url }}">Support</a>
+      <a href="{{ '/upkeep-emergency-contacts' | relative_url }}">Emergency</a>
       <a class="landing-nav-cta" href="https://apps.apple.com/au/app/upkeep/id6777450786">Download</a>
     </div>
   </nav>
@@ -24,10 +25,10 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
       <div class="landing-hero-grid">
         <div class="landing-copy">
           <p class="landing-eyebrow">Home care, made easy.</p>
-          <h1>A beautiful place for everything your home needs.</h1>
+          <h1>Everything your home needs, kept beautifully in one place.</h1>
           <p class="landing-lede">
-            Upkeep brings tasks, reminders, receipts, warranties, products and emergency details
-            into one calm, private iPhone app.
+            Upkeep brings reminders, receipts, warranties, products and emergency details
+            into one calm, private iPhone app that feels made for everyday home life.
           </p>
 
           <div class="landing-actions">
@@ -40,7 +41,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           <div class="landing-trust">
             <span>No account required</span>
             <span>No tracking</span>
-            <span>Private by design</span>
+            <span>Built for real homes</span>
           </div>
         </div>
 
@@ -51,12 +52,12 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
 
           <div class="landing-stat-card score">
             <span>Upkeep Score</span>
-            <strong>On track</strong>
+            <strong>Feeling calm</strong>
           </div>
 
           <div class="landing-stat-card tasks">
             <span>Today</span>
-            <strong>3 reminders</strong>
+            <strong>3 gentle nudges</strong>
           </div>
         </div>
       </div>
@@ -64,8 +65,8 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
 
     <section class="landing-section" id="features">
       <div class="landing-section-heading">
-        <p class="landing-eyebrow">Everything has a place</p>
-        <h2>Less remembering. More staying ahead.</h2>
+        <p class="landing-eyebrow">Designed for the rhythm of home</p>
+        <h2>Less remembering. More feeling prepared.</h2>
       </div>
 
       <div class="feature-board">
@@ -78,7 +79,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           </div>
           <div>
             <p>Smart reminders</p>
-            <h3>Build routines that quietly keep your home moving.</h3>
+            <h3>Build routines that quietly look after the little things.</h3>
             <span>Recurring tasks, overdue views, templates and notification styles that fit how you like to be reminded.</span>
           </div>
         </article>
@@ -92,8 +93,8 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           </div>
           <div>
             <p>Pantry</p>
-            <h3>Products and records, together.</h3>
-            <span>Save receipts, warranties, maintenance logs, photos and product details in one searchable home hub.</span>
+            <h3>Products, receipts and records, together.</h3>
+            <span>Save receipts, warranties, maintenance logs, photos and product details in one searchable home library.</span>
           </div>
         </article>
 
@@ -107,7 +108,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           <div>
             <p>Emergency manual</p>
             <h3>Fast answers when something goes wrong.</h3>
-            <span>Keep shutoffs, key contacts, local emergency numbers and panic guides close at hand.</span>
+            <span>Keep shutoffs, contacts, local emergency numbers and panic guides close at hand.</span>
           </div>
         </article>
 
@@ -136,7 +137,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           </div>
           <div>
             <p>Privacy first</p>
-            <h3>Your home information stays under your control.</h3>
+            <h3>Your home information stays yours.</h3>
             <span>Upkeep does not require an account, does not track you across apps or websites, and does not sell your data.</span>
           </div>
           <a href="{{ '/upkeep-privacy-policy' | relative_url }}">Read privacy policy</a>
@@ -147,7 +148,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
     <section class="landing-section final">
       <div class="final-glass">
         <img src="{{ '/assets/upkeep-icon.png' | relative_url }}" alt="Upkeep app icon">
-        <p class="landing-eyebrow">Ready when you are</p>
+        <p class="landing-eyebrow">Upkeep</p>
         <h2>Make home care feel lighter.</h2>
         <p>Give your tasks, products, records and emergency details a place that feels clear from day one.</p>
         <a class="app-store-button" href="https://apps.apple.com/au/app/upkeep/id6777450786">
@@ -169,7 +170,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
 <style>
 html {
   scroll-behavior: smooth;
-  background: #f5f7fb;
+  background: #fbf4ea;
 }
 
 body {
@@ -178,21 +179,23 @@ body {
 }
 
 .upkeep-landing {
-  --ink: #071427;
-  --muted: #607086;
-  --line: rgba(22, 36, 64, 0.11);
-  --glass: rgba(255, 255, 255, 0.68);
-  --blue: #2488ff;
-  --purple: #b756f0;
-  --green: #29bf73;
-  --red: #ff4d4f;
-  --orange: #ff9f0a;
+  --ink: #241711;
+  --muted: #7b6a5d;
+  --line: rgba(88, 58, 38, 0.13);
+  --glass: rgba(255, 250, 243, 0.7);
+  --clay: #d96a3d;
+  --sage: #6eaa7d;
+  --honey: #e8a93d;
+  --sky: #6fa8dc;
+  --rose: #d9554b;
+  --mauve: #a178b5;
   min-height: 100vh;
   color: var(--ink);
   background:
-    linear-gradient(120deg, rgba(36, 136, 255, 0.13), transparent 34%),
-    linear-gradient(220deg, rgba(183, 86, 240, 0.13), transparent 34%),
-    linear-gradient(180deg, #f7fbff 0%, #f3f5fb 42%, #eef3fb 100%);
+    radial-gradient(circle at 12% 11%, rgba(232, 169, 61, 0.26), transparent 27%),
+    radial-gradient(circle at 88% 20%, rgba(110, 170, 125, 0.25), transparent 28%),
+    radial-gradient(circle at 66% 82%, rgba(217, 106, 61, 0.16), transparent 30%),
+    linear-gradient(180deg, #fff9f0 0%, #f8efe4 48%, #f2e8dc 100%);
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -216,8 +219,8 @@ body {
   padding: 10px 12px;
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.58);
-  box-shadow: 0 18px 60px rgba(32, 52, 87, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  background: rgba(255, 250, 243, 0.64);
+  box-shadow: 0 18px 60px rgba(98, 64, 38, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(26px) saturate(180%);
   -webkit-backdrop-filter: blur(26px) saturate(180%);
   transform: translateX(-50%);
@@ -245,7 +248,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(36, 136, 255, 0.18);
+  box-shadow: 0 10px 25px rgba(217, 106, 61, 0.2);
 }
 
 .landing-nav-links {
@@ -264,20 +267,20 @@ body {
 
 .landing-nav-links a {
   padding: 10px 13px;
-  color: rgba(7, 20, 39, 0.72);
+  color: rgba(36, 23, 17, 0.72);
 }
 
 .landing-nav-links a:hover,
 .glass-link:hover,
 .feature-tile a:hover {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 250, 243, 0.76);
 }
 
 .landing-nav-links .landing-nav-cta,
 .glass-link {
   color: white;
-  background: linear-gradient(135deg, #268dff, #0864f5);
-  box-shadow: 0 10px 24px rgba(36, 136, 255, 0.24);
+  background: linear-gradient(135deg, #e98755, #c95031);
+  box-shadow: 0 10px 24px rgba(217, 106, 61, 0.25);
 }
 
 .landing-hero {
@@ -302,7 +305,7 @@ body {
 
 .landing-eyebrow {
   margin: 0 0 14px;
-  color: var(--blue);
+  color: var(--clay);
   font-size: 15px;
   font-weight: 780;
   letter-spacing: 0;
@@ -374,8 +377,8 @@ body {
   padding: 8px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.58);
-  color: rgba(7, 20, 39, 0.64);
+  background: rgba(255, 250, 243, 0.62);
+  color: rgba(36, 23, 17, 0.64);
   font-size: 13px;
   font-weight: 650;
   backdrop-filter: blur(18px);
@@ -393,8 +396,8 @@ body {
   padding: 14px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 48px;
-  background: rgba(255, 255, 255, 0.46);
-  box-shadow: 0 34px 100px rgba(32, 52, 87, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  background: rgba(255, 250, 243, 0.5);
+  box-shadow: 0 34px 100px rgba(98, 64, 38, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(28px) saturate(170%);
   -webkit-backdrop-filter: blur(28px) saturate(170%);
 }
@@ -403,7 +406,7 @@ body {
   display: block;
   width: 100%;
   border-radius: 36px;
-  box-shadow: 0 18px 48px rgba(32, 52, 87, 0.16);
+  box-shadow: 0 18px 48px rgba(98, 64, 38, 0.15);
 }
 
 .landing-stat-card {
@@ -412,8 +415,8 @@ body {
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 22px 52px rgba(32, 52, 87, 0.18);
+  background: rgba(255, 250, 243, 0.76);
+  box-shadow: 0 22px 52px rgba(98, 64, 38, 0.17);
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
 }
@@ -474,8 +477,8 @@ body {
   padding: 24px;
   border: 1px solid rgba(255, 255, 255, 0.74);
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.62);
-  box-shadow: 0 24px 70px rgba(32, 52, 87, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.72), rgba(255, 246, 235, 0.58));
+  box-shadow: 0 24px 70px rgba(98, 64, 38, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(26px) saturate(170%);
   -webkit-backdrop-filter: blur(26px) saturate(170%);
 }
@@ -497,11 +500,11 @@ body {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 14px 30px rgba(0, 0, 0, 0.1);
 }
 
-.feature-tile.blue .tile-icon { background: linear-gradient(135deg, #48a6ff, #0969ff); }
-.feature-tile.purple .tile-icon { background: linear-gradient(135deg, #cf72ff, #8a34e6); }
-.feature-tile.red .tile-icon { background: linear-gradient(135deg, #ff746d, #ff3b30); }
-.feature-tile.green .tile-icon { background: linear-gradient(135deg, #4bdf91, #18a75d); }
-.feature-tile.privacy .tile-icon { background: linear-gradient(135deg, #6aa9ff, #b756f0); }
+.feature-tile.blue .tile-icon { background: linear-gradient(135deg, #7bb7e7, #4b8dc4); }
+.feature-tile.purple .tile-icon { background: linear-gradient(135deg, #c79ad4, #8f65a6); }
+.feature-tile.red .tile-icon { background: linear-gradient(135deg, #ef856c, #cf4d35); }
+.feature-tile.green .tile-icon { background: linear-gradient(135deg, #8fcf9b, #5d9d6d); }
+.feature-tile.privacy .tile-icon { background: linear-gradient(135deg, #e7b85a, #d96a3d); }
 
 .feature-tile p {
   margin: 0 0 8px;
@@ -530,7 +533,7 @@ body {
 .feature-tile a {
   width: fit-content;
   padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.68);
+  background: rgba(255, 250, 243, 0.72);
   border: 1px solid var(--line);
 }
 
@@ -547,9 +550,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 44px;
   background:
-    linear-gradient(135deg, rgba(36, 136, 255, 0.12), rgba(183, 86, 240, 0.12)),
-    rgba(255, 255, 255, 0.62);
-  box-shadow: 0 28px 90px rgba(32, 52, 87, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    linear-gradient(135deg, rgba(232, 169, 61, 0.16), rgba(110, 170, 125, 0.14)),
+    rgba(255, 250, 243, 0.64);
+  box-shadow: 0 28px 90px rgba(98, 64, 38, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(28px) saturate(180%);
   -webkit-backdrop-filter: blur(28px) saturate(180%);
 }
@@ -558,7 +561,7 @@ body {
   width: 82px;
   height: 82px;
   border-radius: 24px;
-  box-shadow: 0 18px 38px rgba(36, 136, 255, 0.18);
+  box-shadow: 0 18px 38px rgba(217, 106, 61, 0.2);
 }
 
 .final-glass p {
@@ -572,7 +575,7 @@ body {
   padding: 0 0 36px;
   justify-content: space-between;
   gap: 14px;
-  color: rgba(7, 20, 39, 0.56);
+  color: rgba(36, 23, 17, 0.56);
   font-size: 14px;
 }
 

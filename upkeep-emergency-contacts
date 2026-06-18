@@ -3,17 +3,37 @@ layout: page
 title: Emergency Numbers
 ---
 
-<p class="policy-intro">
-Emergency numbers vary by country, region, and service. Use this guide as a quick reference, but always follow local official advice where available.
-</p>
+<section class="legal-hero emergency-accent">
+  <div class="legal-hero-copy">
+    <p class="legal-eyebrow">Emergency Numbers</p>
+    <h1>Fast reference for urgent home situations.</h1>
+    <p>
+      Emergency numbers vary by country, region and service. Use this as a quick
+      reference, but always follow official local advice where available.
+    </p>
+  </div>
 
-<p class="policy-intro">
-For immediate danger, serious injury, fire, crime in progress, or life-threatening situations, call the emergency number for your location immediately.
-</p>
+  <div class="legal-summary-card">
+    <span>Updated 9 June 2026</span>
+    <strong>If there is immediate danger, serious injury, fire, crime in progress or a life-threatening situation, call your local emergency number now.</strong>
+  </div>
+</section>
 
-<div class="policy-meta">
-  <span><strong>Updated:</strong> 9 June 2026</span>
-  <span><strong>App:</strong> Upkeep</span>
+<div class="legal-page emergency-accent">
+
+<div class="legal-grid">
+  <div class="legal-callout">
+    <strong>Use emergency numbers for immediate danger</strong>
+    <p>Fire, serious injury, active crime, gas explosion risk or urgent rescue should be treated as emergencies.</p>
+  </div>
+  <div class="legal-callout">
+    <strong>Use non-emergency numbers for advice</strong>
+    <p>Noise complaints, earlier incidents, report numbers and local service questions usually belong with non-emergency services.</p>
+  </div>
+  <div class="legal-callout">
+    <strong>Save your local utilities</strong>
+    <p>Gas, electricity, water, council and insurance contacts vary by home and region.</p>
+  </div>
 </div>
 
 ## Important Safety Notes
@@ -472,3 +492,5 @@ Use non-emergency numbers when:
 This guide is provided as a general reference only. Emergency numbers can change and may vary by region, phone network, or local authority.
 
 Always follow official local advice and call the appropriate emergency number for your current location.
+
+</div>

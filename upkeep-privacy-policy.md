@@ -8,8 +8,8 @@ title: Privacy Policy
     <p class="legal-eyebrow">Privacy Policy</p>
     <h1>Privacy that feels simple, clear and respectful.</h1>
     <p>
-      Upkeep is designed to help you care for your home without turning your home
-      information into an advertising profile.
+      Upkeep is designed to help you care for your home without turning personal
+      home information into an advertising profile.
     </p>
   </div>
 
