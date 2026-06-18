@@ -314,3 +314,27 @@ body > footer,
 main + footer {
   display: none !important;
 }
+
+/* Full-width Upkeep landing page */
+main.page-content {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+main.page-content > .wrapper,
+.post,
+.post-content {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.upkeep-site {
+  width: 100%;
+  max-width: none;
+  overflow-x: clip;
+  overflow-y: visible;
+}
