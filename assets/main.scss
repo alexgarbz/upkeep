@@ -100,8 +100,13 @@ body {
 
 .global-nav-links .global-nav-cta,
 .global-nav-links .landing-nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
   color: white !important;
-  background: linear-gradient(135deg, #b86b56, #8f4738);
+  background: linear-gradient(135deg, #b86b56, #8f4738) !important;
   box-shadow: 0 10px 24px rgba(184, 107, 86, 0.24);
 }
 
@@ -490,6 +495,13 @@ main.page-content > .wrapper,
     display: block;
     padding: 14px;
     background: rgba(255, 250, 243, 0.66);
+  }
+
+  .global-nav-links .global-nav-cta,
+  .global-nav-links .landing-nav-cta {
+    display: flex;
+    padding: 14px;
+    background: linear-gradient(135deg, #b86b56, #8f4738) !important;
   }
 
   .site-header {
