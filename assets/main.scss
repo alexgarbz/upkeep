@@ -98,15 +98,11 @@ body {
   background: rgba(255, 250, 243, 0.76);
 }
 
-.global-nav-links .global-nav-cta {
+.global-nav-links .global-nav-cta,
+.global-nav-links .landing-nav-cta {
   color: white !important;
   background: linear-gradient(135deg, #b86b56, #8f4738);
   box-shadow: 0 10px 24px rgba(184, 107, 86, 0.24);
-}
-
-.global-nav-links .global-nav-cta:hover {
-  color: white !important;
-  background: linear-gradient(135deg, #c4765f, #944c3d);
 }
 
 .global-nav-trigger,
