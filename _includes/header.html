@@ -1,30 +1,22 @@
-<header class="site-header" role="banner">
-  <div class="wrapper custom-header-wrapper">
-    <a class="site-title custom-site-title" rel="author" href="{{ "/" | relative_url }}">
-      <img
-        src="{{ site.logo | relative_url }}"
-        alt="Upkeep app icon"
-        class="site-logo"
-        width="34"
-        height="34"
-      >
+<header class="global-floating-header" role="banner">
+  <nav class="global-floating-nav" aria-label="Main navigation">
+    <a class="global-brand" rel="author" href="{{ "/upkeep" | relative_url }}">
+      <img src="{{ site.logo | relative_url }}" alt="Upkeep app icon" width="40" height="40">
       <span>{{ site.title | escape }}</span>
     </a>
 
-    <nav class="site-nav" aria-label="Main navigation">
-      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <input type="checkbox" id="nav-trigger" class="global-nav-trigger" />
 
-      <label for="nav-trigger" class="menu-icon" aria-label="Open navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+    <label for="nav-trigger" class="global-menu-icon" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-      <div class="trigger">
-        <a class="page-link" href="{{ "/upkeep" | relative_url }}">Home</a>
-        <a class="page-link" href="{{ "/upkeep-privacy-policy" | relative_url }}">Privacy</a>
-        <a class="page-link" href="{{ "/upkeep-support" | relative_url }}">Support</a>
-      </div>
-    </nav>
-  </div>
+    <div class="global-nav-links">
+      <a href="{{ "/upkeep" | relative_url }}">Home</a>
+      <a href="{{ "/upkeep-privacy-policy" | relative_url }}">Privacy</a>
+      <a href="{{ "/upkeep-support" | relative_url }}">Support</a>
+    </div>
+  </nav>
 </header>
