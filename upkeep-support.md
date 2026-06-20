@@ -3,143 +3,88 @@ layout: page
 title: Support
 ---
 
-<section class="legal-hero support-accent">
-  <div class="legal-hero-copy">
-    <p class="legal-eyebrow">Support</p>
-    <h1>Help for keeping Upkeep running smoothly.</h1>
+<section class="site-hero support-accent">
+  <div class="site-hero-copy">
+    <p class="site-eyebrow">Support</p>
+    <h1>Simple help for Upkeep.</h1>
     <p>
-      Find quick answers for reminders, tasks, records, privacy and troubleshooting.
+      Quick answers for tasks, reminders, pantry records, emergency details and privacy.
     </p>
   </div>
 
-  <div class="legal-summary-card">
+  <div class="site-summary-card">
     <span>Updated 7 June 2026</span>
-    <strong>Upkeep is built to make home maintenance feel simpler, clearer and easier to stay on top of.</strong>
+    <strong>Home care, made easy. Find the answer you need and get back to your day.</strong>
   </div>
 </section>
 
-<div class="legal-page support-accent" markdown="1">
+<div class="site-page support-accent" markdown="1">
 
-<div class="legal-grid">
-  <div class="legal-callout">
-    <strong>Tasks and reminders</strong>
-    <p>Create recurring tasks, choose reminder styles and keep overdue work visible.</p>
+<div class="site-grid">
+  <div class="site-card">
+    <strong>Tasks</strong>
+    <p>Create recurring reminders, use templates and keep overdue work visible.</p>
   </div>
-  <div class="legal-callout">
-    <strong>Pantry records</strong>
+  <div class="site-card">
+    <strong>Pantry</strong>
     <p>Save products, receipts, warranties, repair notes and maintenance logs.</p>
   </div>
-  <div class="legal-callout">
-    <strong>Emergency manual</strong>
-    <p>Keep key shutoffs, contacts, numbers and panic guides close when needed.</p>
+  <div class="site-card">
+    <strong>Emergency</strong>
+    <p>Keep shutoffs, contacts, numbers and guides close when needed.</p>
   </div>
 </div>
 
-## What You Can Do With Upkeep
-
-Upkeep helps you keep important home maintenance tasks and records in one simple place.
-
-You can use Upkeep to:
-
-- Create and manage home maintenance tasks
-- Set recurring schedules and reminders
-- Track overdue, due-today and completed tasks
-- Store product and appliance records
-- Save warranty and home information
-- Keep emergency contacts and emergency locations handy
-- View quick emergency guides for common home issues
+<div class="site-content" markdown="1">
 
 ## Common Questions
 
-### How do I add a new task?
+### How do I add a task?
 
-Open the **Tasks** section in Upkeep, then use the add button to create a new maintenance reminder.
-
-You can add a task title, due date, repeat schedule, notes, priority, difficulty and any other useful details.
+Open **Tasks**, tap the add button, choose the task details and save. You can add due dates, repeat schedules, notes, priority, difficulty and reminders.
 
 ### How do reminders work?
-
-Upkeep uses local notifications to remind you about maintenance tasks.
 
 You can choose Smart Digest, Individual Alerts or Off. Smart Digest groups tasks into Morning, Midday, Afternoon and Evening reminders. Individual Alerts sends a separate alert for each task.
 
 ### How do I enable notifications?
 
-Open the Settings app on your device, then go to:
+Open **Settings -> Notifications -> Upkeep** on your iPhone and make sure notifications are enabled. You can choose your reminder style inside Upkeep settings.
 
-**Settings -> Notifications -> Upkeep**
+### What is Pantry?
 
-Make sure notifications are enabled, then choose your preferred alert style. You can also check notification status inside Upkeep's Settings screen.
+Pantry is where Upkeep keeps products, receipts, warranties, repair notes, photos and maintenance records together.
 
-### Where is my data stored?
+### What is the Emergency Manual?
 
-Upkeep is designed to store your app data locally on your device.
-
-Depending on your Apple device settings, your data may also be included in iCloud backups or device backups managed by Apple.
-
-For more details, see the [Privacy Policy](upkeep-privacy-policy.md).
-
-### Does Upkeep require an account?
-
-No. Upkeep does not require you to create an account.
-
-### Does Upkeep sell or share my data?
-
-No. Upkeep does not sell your personal information and does not share your home maintenance data with advertisers, data brokers or external marketing companies.
-
-### Can I delete my data?
-
-Yes. You can delete tasks, records, contacts, notes and other saved information directly in the app.
-
-You can also delete Upkeep from your device to remove locally stored app data. Some data may remain in Apple-managed iCloud or device backups depending on your backup settings.
+The Emergency Manual stores key shutoff locations, local quick-call information, contacts, important notes and panic guides.
 
 ## Troubleshooting
 
 ### I am not receiving notifications
 
-Try the following:
+Check **Settings -> Notifications -> Upkeep**, confirm the task has a due date or reminder, then reopen Upkeep. Restart your iPhone if alerts still do not appear.
 
-1. Open **Settings** on your device.
-2. Go to **Notifications -> Upkeep**.
-3. Make sure notifications are enabled.
-4. Open Upkeep and check that the task has a due date or reminder schedule.
-5. Restart your device if notifications still do not appear.
+### A task did not repeat
 
-### My task did not repeat
+Check the task's repeat schedule. If the task was completed, edited or snoozed, its next due date may depend on those settings.
 
-Check that the task has a repeat schedule set.
+### My data is missing
 
-If a task has been completed, archived, snoozed or edited, its next due date may depend on the repeat settings you selected.
+If Upkeep was deleted, reset or installed on a new device, local data may only return if restored through an Apple device or iCloud backup.
 
-### My app data is missing
+### Something looks wrong
 
-If Upkeep was deleted, reset or installed on a new device, locally stored data may not automatically appear unless it was restored through Apple device backup or iCloud backup.
-
-Check your Apple backup settings to confirm whether app data was included.
-
-### The app is not behaving correctly
-
-Try these steps:
-
-1. Close and reopen Upkeep.
-2. Restart your iPhone.
-3. Make sure you are running the latest version of Upkeep.
-4. Make sure your device is running a recent version of iOS.
-
-If the issue continues, contact support through the App Store listing.
+Close and reopen Upkeep, make sure you are on the latest version, and restart your iPhone if the issue continues.
 
 ## Privacy
 
-Upkeep is designed to keep your home maintenance information private and under your control.
+Upkeep does not require an account, does not sell your personal information and does not track you across apps or websites. Read the [Privacy Policy]({{ "/upkeep-privacy-policy" | relative_url }}).
 
-Upkeep does not require an account, does not sell your personal information and does not track you across apps or websites.
+## Contact
 
-You can view the full [Privacy Policy](upkeep-privacy-policy.md).
+For support, contact Upkeep through the App Store listing.
 
-## Thank You
-
-Thank you for using Upkeep.
-
-Upkeep is built to make home maintenance feel simpler, clearer and easier to stay on top of.
+</div>
 
 </div>
