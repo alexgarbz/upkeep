@@ -13,9 +13,9 @@ title: Privacy Policy
     </p>
   </div>
 
-  <div class="site-summary-card">
+  <div class="site-hero-note">
     <span>Effective 7 June 2026</span>
-    <strong>No account required. No advertising profile. No selling your data.</strong>
+    <p>No account required. No advertising profile. No selling your data.</p>
   </div>
 </section>
 

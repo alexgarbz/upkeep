@@ -354,6 +354,29 @@ main.page-content > .wrapper,
   letter-spacing: 0;
 }
 
+.site-hero-note {
+  max-width: 360px;
+  justify-self: end;
+  padding: 0 4px 8px 22px;
+  border-left: 2px solid var(--accent-soft);
+}
+
+.site-hero-note span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 780;
+}
+
+.site-hero-note p {
+  margin: 0;
+  color: var(--upkeep-muted);
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 620;
+}
+
 .legal-page,
 .site-page {
   padding: 0 0 90px;
@@ -635,6 +658,12 @@ main.page-content > .wrapper,
   .legal-summary-card strong,
   .site-summary-card strong {
     font-size: 20px;
+  }
+
+  .site-hero-note {
+    max-width: none;
+    justify-self: stretch;
+    padding: 0 0 0 16px;
   }
 
   .legal-grid,

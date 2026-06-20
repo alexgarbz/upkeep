@@ -12,9 +12,9 @@ title: Support
     </p>
   </div>
 
-  <div class="site-summary-card">
+  <div class="site-hero-note">
     <span>Updated 7 June 2026</span>
-    <strong>Home care, made easy. Find the answer you need and get back to your day.</strong>
+    <p>Home care, made easy. Find the answer you need and get back to your day.</p>
   </div>
 </section>
 
