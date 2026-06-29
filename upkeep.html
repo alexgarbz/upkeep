@@ -2,6 +2,7 @@
 layout: default
 title: "Upkeep - Home care, made easy."
 description: "Upkeep helps you manage home maintenance, task reminders, pantry records, warranties, receipts, and emergency essentials in one private iPhone app."
+image: /assets/upkeep-app-preview-1.png
 ---
 
 <div class="upkeep-landing">
@@ -18,7 +19,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
 
           <div class="landing-actions">
             <a class="app-store-button" href="https://apps.apple.com/au/app/upkeep/id6777450786">
-              <img src="{{ '/assets/download-on-app-store.svg' | relative_url }}" alt="Download Upkeep on the App Store">
+              <img src="{{ '/assets/download-on-app-store.svg' | relative_url }}" alt="Download Upkeep on the App Store" decoding="async">
             </a>
             <a class="glass-link" href="#features">Explore features</a>
           </div>
@@ -32,20 +33,20 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
 
         <div class="landing-device-wrap" aria-label="Upkeep app preview">
           <div class="device-glass">
-            <img src="{{ '/assets/upkeep-app-preview-1.png' | relative_url }}" alt="Upkeep home screen preview">
+            <img src="{{ '/assets/upkeep-app-preview-1.png' | relative_url }}" alt="Upkeep home screen preview" decoding="async" fetchpriority="high">
           </div>
         </div>
       </div>
     </section>
 
     <section class="landing-section" id="features">
-      <div class="landing-section-heading">
+      <div class="landing-section-heading reveal">
         <p class="landing-eyebrow">Designed for the rhythm of home</p>
         <h2>Less remembering. More feeling prepared.</h2>
       </div>
 
       <div class="feature-board">
-        <article class="feature-tile feature-wide blue">
+        <article class="feature-tile feature-wide blue reveal">
           <div class="tile-icon">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="4" y="5" width="16" height="15" rx="4"></rect>
@@ -59,7 +60,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           </div>
         </article>
 
-        <article class="feature-tile purple">
+        <article class="feature-tile purple reveal">
           <div class="tile-icon">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M4 8.5 12 4l8 4.5v7L12 20l-8-4.5z"></path>
@@ -73,7 +74,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           </div>
         </article>
 
-        <article class="feature-tile red">
+        <article class="feature-tile red reveal">
           <div class="tile-icon">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="5" y="7" width="14" height="13" rx="4"></rect>
@@ -87,7 +88,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           </div>
         </article>
 
-        <article class="feature-tile green">
+        <article class="feature-tile green reveal">
           <div class="tile-icon">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="4" y="4" width="6" height="6" rx="2"></rect>
@@ -103,7 +104,7 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
           </div>
         </article>
 
-        <article class="feature-tile feature-wide privacy">
+        <article class="feature-tile feature-wide privacy reveal">
           <div class="tile-icon">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3 5 6v5c0 4.8 3 8.3 7 10 4-1.7 7-5.2 7-10V6z"></path>
@@ -121,13 +122,13 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
     </section>
 
     <section class="landing-section final">
-      <div class="final-glass">
-        <img src="{{ '/assets/upkeep-icon.png' | relative_url }}" alt="Upkeep app icon">
+      <div class="final-glass reveal">
+        <img class="final-icon" src="{{ '/assets/upkeep-icon.png' | relative_url }}" alt="Upkeep app icon" loading="lazy" decoding="async">
         <p class="landing-eyebrow">Upkeep</p>
         <h2>Make home care feel lighter.</h2>
         <p>Give your tasks, products, records and emergency details a place that feels clear from day one.</p>
         <a class="app-store-button" href="https://apps.apple.com/au/app/upkeep/id6777450786">
-          <img src="{{ '/assets/download-on-app-store.svg' | relative_url }}" alt="Download Upkeep on the App Store">
+          <img src="{{ '/assets/download-on-app-store.svg' | relative_url }}" alt="Download Upkeep on the App Store" loading="lazy" decoding="async">
         </a>
       </div>
     </section>
@@ -141,6 +142,42 @@ description: "Upkeep helps you manage home maintenance, task reminders, pantry r
     </div>
   </footer>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Upkeep",
+  "operatingSystem": "iOS",
+  "applicationCategory": "LifestyleApplication",
+  "description": "Upkeep helps you manage home maintenance, task reminders, pantry records, warranties, receipts, and emergency essentials in one private iPhone app.",
+  "url": {{ '/' | absolute_url | jsonify }},
+  "image": {{ '/assets/upkeep-icon.png' | absolute_url | jsonify }},
+  "downloadUrl": "https://apps.apple.com/au/app/upkeep/id6777450786",
+  "author": { "@type": "Person", "name": "Alex Garbin" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" }
+}
+</script>
+
+<script>
+  (function () {
+    var root = document.querySelector('.upkeep-landing');
+    if (!root) return;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // Without JS / IntersectionObserver / with reduced motion, content stays fully visible.
+    if (reduce || !('IntersectionObserver' in window)) return;
+    root.classList.add('reveal-ready');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    root.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  })();
+</script>
 
 <style>
 html {
@@ -173,6 +210,7 @@ body {
     linear-gradient(180deg, #fffaf4 0%, #f7f1e8 48%, #eee6da 100%);
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .upkeep-landing *,
@@ -189,16 +227,45 @@ body {
   align-items: center;
 }
 
+/* Keyboard focus visibility for every interactive element. */
+.upkeep-landing a:focus-visible,
+.upkeep-landing button:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+/* Scroll-reveal — only active once JS adds .reveal-ready, so content is never
+   hidden without JS. Disabled entirely under prefers-reduced-motion (below). */
+.upkeep-landing.reveal-ready .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.upkeep-landing.reveal-ready .reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+.upkeep-landing.reveal-ready .feature-board .reveal:nth-child(2) { transition-delay: 0.06s; }
+.upkeep-landing.reveal-ready .feature-board .reveal:nth-child(3) { transition-delay: 0.12s; }
+.upkeep-landing.reveal-ready .feature-board .reveal:nth-child(4) { transition-delay: 0.18s; }
+.upkeep-landing.reveal-ready .feature-board .reveal:nth-child(5) { transition-delay: 0.24s; }
+
 .glass-link,
 .feature-tile a {
-  color: var(--ink);
   font-size: 14px;
   font-weight: 680;
   text-decoration: none;
   border-radius: 999px;
 }
 
-.glass-link:hover,
+.feature-tile a {
+  color: var(--ink);
+}
+
 .feature-tile a:hover {
   background: rgba(255, 250, 243, 0.76);
 }
@@ -207,6 +274,13 @@ body {
   color: white;
   background: linear-gradient(135deg, #b86b56, #8f4738);
   box-shadow: 0 10px 24px rgba(184, 107, 86, 0.24);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.glass-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(184, 107, 86, 0.32);
+  filter: brightness(1.03);
 }
 
 .landing-hero {
@@ -244,6 +318,7 @@ body {
   color: var(--ink);
   font-weight: 820;
   letter-spacing: 0;
+  text-wrap: balance;
 }
 
 .landing-copy h1 {
@@ -258,6 +333,7 @@ body {
   color: var(--muted);
   font-size: clamp(18px, 2vw, 22px);
   line-height: 1.48;
+  text-wrap: pretty;
 }
 
 .landing-lede {
@@ -342,6 +418,10 @@ body {
   padding: 76px 0;
 }
 
+#features {
+  scroll-margin-top: 90px;
+}
+
 .landing-section-heading {
   max-width: 720px;
   margin-bottom: 28px;
@@ -372,6 +452,14 @@ body {
   box-shadow: 0 24px 70px rgba(98, 64, 38, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(26px) saturate(170%);
   -webkit-backdrop-filter: blur(26px) saturate(170%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .feature-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 32px 86px rgba(98, 64, 38, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
 }
 
 .feature-wide {
@@ -416,6 +504,7 @@ body {
   font-size: 13px;
   font-weight: 760;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .feature-tile h3 {
@@ -424,6 +513,7 @@ body {
   font-size: clamp(24px, 2.5vw, 34px);
   line-height: 1.06;
   letter-spacing: 0;
+  text-wrap: balance;
 }
 
 .feature-tile span {
@@ -439,6 +529,7 @@ body {
   padding: 10px 14px;
   background: rgba(255, 250, 243, 0.72);
   border: 1px solid var(--line);
+  transition: background 0.2s ease;
 }
 
 .final {
@@ -461,7 +552,7 @@ body {
   -webkit-backdrop-filter: blur(28px) saturate(180%);
 }
 
-.final-glass img:first-child {
+.final-icon {
   width: 82px;
   height: 82px;
   border-radius: 24px;
@@ -503,6 +594,10 @@ body {
   color: inherit;
   font-weight: 650;
   text-decoration: none;
+}
+
+.landing-footer a:hover {
+  color: var(--ink);
 }
 
 @media (max-width: 940px) {
@@ -582,6 +677,93 @@ body {
     width: calc(100% - 28px);
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* Warm dark theme — keeps the cream/clay identity, just inverted into deep browns. */
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #120d0a;
+  }
+
+  .upkeep-landing {
+    --ink: #f4ece1;
+    --muted: #b1a395;
+    --line: rgba(255, 240, 225, 0.12);
+    --glass: rgba(40, 32, 27, 0.6);
+    color: var(--ink);
+    background:
+      radial-gradient(circle at 12% 11%, rgba(184, 107, 86, 0.22), transparent 28%),
+      radial-gradient(circle at 88% 20%, rgba(116, 138, 120, 0.18), transparent 30%),
+      radial-gradient(circle at 66% 82%, rgba(102, 133, 166, 0.16), transparent 32%),
+      linear-gradient(180deg, #1f1813 0%, #181210 48%, #120d0a 100%);
+  }
+
+  .landing-trust span {
+    background: rgba(58, 47, 39, 0.55);
+    color: rgba(244, 236, 225, 0.72);
+  }
+
+  .device-glass {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(44, 35, 29, 0.5);
+    box-shadow: 0 34px 100px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .device-glass img {
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.4);
+  }
+
+  .feature-tile {
+    border-color: rgba(255, 255, 255, 0.08);
+    background: linear-gradient(145deg, rgba(60, 49, 41, 0.62), rgba(40, 32, 27, 0.5));
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .feature-tile a {
+    background: rgba(58, 47, 39, 0.6);
+    color: var(--ink);
+  }
+
+  .feature-tile a:hover {
+    background: rgba(72, 59, 49, 0.72);
+  }
+
+  .final-glass {
+    border-color: rgba(255, 255, 255, 0.1);
+    background:
+      linear-gradient(135deg, rgba(184, 107, 86, 0.2), rgba(116, 138, 120, 0.16)),
+      rgba(40, 32, 27, 0.6);
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .landing-footer {
+    color: rgba(244, 236, 225, 0.55);
+  }
+
+  @media (hover: hover) {
+    .feature-tile:hover {
+      box-shadow: 0 32px 86px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .upkeep-landing *,
+  .upkeep-landing *::before,
+  .upkeep-landing *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .app-store-button:hover,
+  .glass-link:hover,
+  .feature-tile:hover {
+    transform: none;
   }
 }
 </style>
