@@ -180,6 +180,11 @@ image: /assets/upkeep-app-preview-1.png
 </script>
 
 <style>
+/* Inter as a consistent cross-platform face (Mac still gets native SF Pro via the
+   font stack below). For best performance move this to a <link> in <head>, or
+   self-host Inter to avoid the third-party request. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap');
+
 html {
   scroll-behavior: smooth;
   background: #f7f1e8;
@@ -208,9 +213,10 @@ body {
     radial-gradient(circle at 88% 20%, rgba(116, 138, 120, 0.24), transparent 28%),
     radial-gradient(circle at 66% 82%, rgba(102, 133, 166, 0.14), transparent 30%),
     linear-gradient(180deg, #fffaf4 0%, #f7f1e8 48%, #eee6da 100%);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: transparent;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .upkeep-landing *,
@@ -317,7 +323,7 @@ body {
   margin: 0;
   color: var(--ink);
   font-weight: 820;
-  letter-spacing: 0;
+  letter-spacing: -0.015em;
   text-wrap: balance;
 }
 
@@ -512,7 +518,7 @@ body {
   color: var(--ink);
   font-size: clamp(24px, 2.5vw, 34px);
   line-height: 1.06;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
